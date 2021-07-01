@@ -1,5 +1,11 @@
 <div class="card" style="width: 30rem;">
-
+  <div class="alert alert-danger" role="alert" *ngIf="errors?.length > 0">
+    <ul>
+      <li *ngFor="let error of errors">
+        {{ error }}
+      </li>
+    </ul>
+  </div>
   <div class="card-body">
     <form [formGroup]="regForm" novalidate>
 
@@ -80,13 +86,7 @@
         </div>
       </div>
 
-      <div class="alert alert-danger" role="alert" *ngIf="errors?.length > 0">
-        <ul>
-          <li *ngFor="let error of errors">
-            {{ error }}
-          </li>
-        </ul>
-      </div>
+
       <div *ngIf="message != null" class="alert alert-success">
         {{message}}
       </div>

@@ -1,0 +1,20 @@
+.sticky-header-new {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  /* display: unset; */
+  /* position: -webkit-sticky; */
+  top: 0;
+  background-color: blue;
+  z-index: 1000;
+  /* overflow: initial; */
+  /* position: -webkit-sticky; */
+  /* position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky; */
+}
+/* :host {
+  display: block;
+} */
